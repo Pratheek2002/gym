@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GYM </title>
+</head>
+<style>
+    /* CSS RESET  */
+    body {
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        /* background-color: gray; */
+        background-image: url("img/img1.jpg");
+        background-repeat:no-repeat;
+        /* background-position:left; */
+        background-size: cover;
+          
+    }
+
+    .left {
+        margin-top: 20px;
+        margin-left: 40px;
+        display: inline-block;
+        padding: 5px;
+        font-size: small;
+
+    }
+
+    .left img {
+        width: 60px;
+    }
+
+    .middle {
+        position: absolute;
+        color: white;
+        display: block;
+        width: 60%;
+        margin: 0px 22%;
+        border: rgb(39, 37, 37);
+        border-style:none;
+
+    }
+
+    .right {
+        position:absolute;
+        right: 50px;
+        top: 25px;
+        /* margin:2px auto; */
+        display: inline-block;
+        border: chartreuse;
+        border-style: none:
+        padding: 12px;
+    }
+
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: rgb(204, 219, 204);
+        text-decoration: none;
+        padding: 25px 40px;
+        font-size: 18px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: lightslategray;
+
+    }
+
+    .btn {
+        background-color: black;
+        color: whitesmoke;
+        padding: 1px 6px;
+        border-color: grey;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: lightslategray;
+        font-style: italic;
+    }
+
+    #btn1 {
+        cursor: help;
+    }
+
+    .container {
+        border: darkgreen;
+        border-style: none;
+        display: inline-block;
+        margin: 100px 50px;
+        padding: 45px 85px;
+        width: 50%;
+        border-radius: 10px;
+    }
+
+    .container h2 {
+        font-size: xx-large;
+    }
+
+    .fgroup input {
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 9px;
+        margin: 4px auto;
+        border-radius: 10px;
+        border-color: black;
+    }
+
+    .fgroup input:hover {
+        font-size: medium
+    }
+
+    .gym {
+        text-align: center;
+
+    }
+
+    #submit {
+        margin: 10px 23%;
+    }
+
+    #submit:hover {
+        background-color: darkgrey;
+        cursor: pointer;
+        font-style: italic;
+    }
+</style>
+
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/img2.jpg" alt="">
+            <div>
+                <center>Fit</center>
+            </div>
+        </div>
+        <!-- Middle for navigation -->
+        <div class="middle">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a> </li>
+                <li> <a href="#" class="active">About us</a> </li>
+                <li><a href="#" class="active">Fitness Calculator</a></li>
+                <li><a href="#" class="active">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right for some buttons -->
+        <div class="right">
+            <button class="btn" id="btn1">Help</button>
+            <button class="btn">Call us now</button>
+
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2 class="gym">Best Gym in Hyderabad</h2>
+        <form action="noaction.php">
+            <div class="fgroup">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="fgroup">
+                <input type="text" placeholder="Age">
+            </div>
+            <div class="fgroup">
+                <input type="text" placeholder="Phonenumber">
+            </div>
+            <div class="fgroup">
+                <input type="text" placeholder="Gender">
+            </div>
+            <butoon id="submit" class="btn">Submit</butoon>
+        </form>
+    </div>
+
+</body>
+
+</html>
